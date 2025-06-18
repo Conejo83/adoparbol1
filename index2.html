@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopta un Árbol Montería - Mapa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🌳 Adopta un Árbol Montería</h1>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#" class="active">Ver Mapa de Árboles</a>
+            <a href="#">Donar un Árbol</a>
+            <a href="#">Historias Verdes</a>
+            <a href="#">Aprende Más</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Mapa de Árboles Geolocalizados</h2>
+        <p>Haz clic en un árbol para ver su información y adoptarlo.</p>
+
+        <div class="legend">
+            <div class="legend-item">
+                <span class="legend-color" style="background-color: #34A853;"></span> Disponible
+            </div>
+            <div class="legend-item">
+                <span class="legend-color" style="background-color: #FBBC05;"></span> Adoptado (en seguimiento)
+            </div>
+            <div class="legend-item">
+                <span class="legend-color" style="background-color: #EA4335;"></span> No disponible
+            </div>
+        </div>
+
+        <!-- El mapa se mostrará aquí -->
+        <div id="mapa"></div>
+    </main>
+
+    <footer>
+        <p>© 2023 Proyecto Adopta un Árbol Montería</p>
+    </footer>
+
+    <!-- 
+      IMPORTANTE: Reemplaza "TU_API_KEY_AQUI" con tu propia API Key de Google Maps.
+      La parte "&callback=initMap" es crucial, le dice a Google qué función ejecutar cuando todo esté listo.
+    -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY_AQUI&callback=initMap" async defer></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
